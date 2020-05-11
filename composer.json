@@ -1,0 +1,36 @@
+{
+  "name": "zakurdaev/yii2-editorjs-widget",
+  "description": "Use editor.js in form. Module for Yii2",
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "version": "1.0.0",
+  "homepage": "https://github.com/zakurdaev/yii2-editorjs-widget",
+  "authors": [
+    {
+      "name": "Andrey Zakurdaev",
+      "email": "andrey@zakurdaev.pro"
+    }
+  ],
+  "keywords": [
+    "editor.js",
+    "redactor",
+    "wysiwyg",
+    "yii2",
+    "yii 2",
+    "yii2 widget"
+  ],
+  "support": {
+    "issues": "https://github.com/zakurdaev/yii2-editorjs-widget/issues?state=open",
+    "source": "https://github.com/zakurdaev/yii2-editorjs-widget"
+  },
+  "require": {
+    "php": ">=7.0",
+    "yiisoft/yii2": "~2.0.0",
+    "codex-team/editor.js": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "zakurdaev\\editorjs\\": "src"
+    }
+  }
+}
