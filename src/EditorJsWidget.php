@@ -65,10 +65,10 @@ class EditorJsWidget extends Widget
     /**
      * @var string|null Url to save editor data
      * $endpoints = [
-        'saveJson' => '',
-        'uploadImageByFile' => '',
-        'uploadImageFetchUrl' => ''
-        ]
+    'saveJson' => '',
+    'uploadImageByFile' => '',
+    'uploadImageFetchUrl' => ''
+    ]
      */
     public $endpoints = [];
 
@@ -143,8 +143,6 @@ class EditorJsWidget extends Widget
                     'field' => 'image',
                     'additionalRequestHeaders' => [],
                     'endpoints' => [
-                        'byFile' => Url::to(['/editor-js/upload-file']),
-                        'byUrl' => Url::to(['/editor-js/fetch-url']),
                     ]
                 ]
             ],
@@ -338,7 +336,7 @@ class EditorJsWidget extends Widget
                 if (!is_array($config['config']['endpoints'])) {
                     $config['config']['endpoints'] = [];
                 }
-                $config['config']['endpoints']['byFile'] = $byFile;
+                $config['config']['endpoints']['byUrl'] = $byUrl;
             }
         }
 
